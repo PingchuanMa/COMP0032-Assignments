@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B07D6FF7-6955-4217-957F-CAA41D88C8D8}</ProjectGuid>
+    <ProjectGuid>{604421ED-A692-4AD7-8625-FF0617B8D1C4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My2DirectedAcyclicGraph</RootNamespace>
+    <RootNamespace>My2TopologicalOrdering</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
