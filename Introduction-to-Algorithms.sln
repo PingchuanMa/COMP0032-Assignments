@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2 Topological Ordering", "2
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4 Closest Pair", "4 Closest Pair\4 Closest Pair.vcxproj", "{5C261526-4EBD-415B-A9F7-17706D26265A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5 Edit Distance (Exam)", "5 Edit Distance (Exam)\5 Edit Distance (Exam).vcxproj", "{2BB153A3-EE91-434A-8B87-D269CDF6F191}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{5C261526-4EBD-415B-A9F7-17706D26265A}.Release|x64.Build.0 = Release|x64
 		{5C261526-4EBD-415B-A9F7-17706D26265A}.Release|x86.ActiveCfg = Release|Win32
 		{5C261526-4EBD-415B-A9F7-17706D26265A}.Release|x86.Build.0 = Release|Win32
+		{2BB153A3-EE91-434A-8B87-D269CDF6F191}.Debug|x64.ActiveCfg = Debug|x64
+		{2BB153A3-EE91-434A-8B87-D269CDF6F191}.Debug|x64.Build.0 = Debug|x64
+		{2BB153A3-EE91-434A-8B87-D269CDF6F191}.Debug|x86.ActiveCfg = Debug|Win32
+		{2BB153A3-EE91-434A-8B87-D269CDF6F191}.Debug|x86.Build.0 = Debug|Win32
+		{2BB153A3-EE91-434A-8B87-D269CDF6F191}.Release|x64.ActiveCfg = Release|x64
+		{2BB153A3-EE91-434A-8B87-D269CDF6F191}.Release|x64.Build.0 = Release|x64
+		{2BB153A3-EE91-434A-8B87-D269CDF6F191}.Release|x86.ActiveCfg = Release|Win32
+		{2BB153A3-EE91-434A-8B87-D269CDF6F191}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
