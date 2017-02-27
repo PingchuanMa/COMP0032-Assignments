@@ -8,8 +8,7 @@ int main() {
     cin >> preset;
     vector<queue<int> > rankM(preset, queue<int>());
     vector<vector<int> > rankW(preset, vector<int>(preset));
-    vector<int> ansM(preset, -1);
-    vector<int> ansW(preset, -1);
+    vector<int> ansM(preset, -1), ansW(preset, -1);
     queue<int> men;
     for (int i = 0; i < preset; ++i) {
         men.push(i);
