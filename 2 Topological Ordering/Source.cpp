@@ -22,7 +22,7 @@ int find(const vector<int>& loop, int finding) {
     return -1;
 }
 
-// swap the "index"th nubmer and the number which is "i" in topo
+// swap the "index"th number and the number which is "i" in topo
 void swap(int* topo, int index, int i) {
     int temp;
     int iIndex = 0;
