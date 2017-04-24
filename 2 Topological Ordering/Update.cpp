@@ -7,11 +7,11 @@ using namespace std;
 int main() {
 
 	// Declare variations
-	int vertice, edge;
+	int vertice, edges;
 	int start, end;
 
 	// Set the number of vertice and edge
-	cin >> vertice >> edge;
+	cin >> vertice >> edges;
 
 	// Initialize the graph with all value := false
 	vector<vector<bool> > graph(vertice, vector<bool>(vertice, false));
@@ -26,7 +26,7 @@ int main() {
 	}
 
 	// Build the edges for the graph
-	for (size_t i = 0; i < edge; ++i) {
+	for (size_t i = 0; i < edges; ++i) {
 		cin >> start >> end;
 		graph[start - 1][end - 1] = true;
 		++inDegree[end - 1];
