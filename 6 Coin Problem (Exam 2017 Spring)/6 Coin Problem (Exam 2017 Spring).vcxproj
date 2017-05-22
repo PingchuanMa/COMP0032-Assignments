@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2BB153A3-EE91-434A-8B87-D269CDF6F191}</ProjectGuid>
+    <ProjectGuid>{EA3D92B4-D93A-4233-BD35-3165E7B62926}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>My5EditDistanceExam</RootNamespace>
+    <RootNamespace>My6CoinProblemExam2017Spring</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
