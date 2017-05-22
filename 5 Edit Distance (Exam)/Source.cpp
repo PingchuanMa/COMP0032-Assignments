@@ -6,7 +6,7 @@ int main() {
     string a, b;
     cin >> a >> b;
     // initial the distance matrix
-	vector<vector<int> > dist(a.length() + 1);
+    vector<vector<int> > dist(a.length() + 1);
     for (int i = 0; i <= a.length(); ++i) {
         dist[i].resize(b.length() + 1, 0);
         dist[i][0] = i;
