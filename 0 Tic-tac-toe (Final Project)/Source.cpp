@@ -78,23 +78,23 @@ public:
 
     }
 
-    int waitfor() {
+    int input() {
         int x, y;
         cin >> x >> y;
         if (x < 1 || x > 3 || y < 1 || y > 3) {
-            printf("ÔÛ¾®×ÖÆåÆåÅÌĞ¡£¬Äú³¯Àï±ß¶ùÏÂ¡£\n");
-            waitfor();
+            cout << "å’±äº•å­—æ£‹æ£‹ç›˜å°ï¼Œæ‚¨æœé‡Œè¾¹å„¿ä¸‹ã€‚" << endl;
+            input();
         }
         else if (board[x - 1][y - 1] == X || board[x - 1][y - 1] == O) {
-            printf("Õâ¶ùÓĞ×Ó¶ùÁË£¬Äú±ğ´¦Çë°É¡£\n");
-            waitfor();
+            cout << "è¿™å„¿æœ‰å­å„¿äº†ï¼Œæ‚¨åˆ«å¤„è¯·å§ã€‚" << endl;
+            input();
         }
         else { board[x - 1][y - 1] = turn; }
         return 0;
     }
 
-    int reverse(int turn_now) {
-        if (turn_now = COMPUTER) {
+    static int reverse(int turn_now) {
+        if (turn_now == COMPUTER) {
             return HUMAN;
         }
         else {
@@ -106,7 +106,7 @@ public:
         int max = INF_MIN;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                if (board[i][j] == 0) {//¸ÃÎ»ÖÃ¿ÉÏÂ
+                if (board[i][j] == 0) { //è¯¥ä½ç½®å¯ä¸‹
                     board[i][j] = turn;
                     compute_state();
                     if (value == INF_MIN) {
@@ -126,7 +126,7 @@ public:
         int best;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                if (board[i][j] == 0) {//¸ÃÎ»ÖÃ¿ÉÏÂ
+                if (board[i][j] == 0) { //è¯¥ä½ç½®å¯ä¸‹
                     board[i][j] = reverse(turn);
                     compute_state();
                     value = max1();
@@ -146,7 +146,7 @@ public:
         int min = INF_MAX;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                if (board[i][j] == 0) {//¸ÃÎ»ÖÃ¿ÉÏÂ
+                if (board[i][j] == 0) { //è¯¥ä½ç½®å¯ä¸‹
                     board[i][j] = turn;
                     compute_state();
                     if (value == INF_MAX) {
@@ -167,7 +167,7 @@ public:
         int best;
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                if (board[i][j] == 0) {//¸ÃÎ»ÖÃ¿ÉÏÂ
+                if (board[i][j] == 0) { //è¯¥ä½ç½®å¯ä¸‹
                     board[i][j] = reverse(turn);
                     compute_state();
                     value = min2();
@@ -183,7 +183,7 @@ public:
         return 0;
     }
 
-    void printstate() {
+    void print_state() {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (board[i][j] == X)
@@ -198,63 +198,33 @@ public:
     }
 
     int init() {
-        printf("initial state\n");
+        cout << "æ¸¸æˆå¼€å§‹ï¼" << endl;
         compute_state();
-        printstate();
-        if (turn == HUMAN) {
-            while (xi != 0 && oi != 0) {
-                printf("\nyour turn\n");
-                waitfor();
-                compute_state();
-                printstate();
-                if (value == INF_MAX) {
-                    printf("EXECELLENT!\nYOU WIN\n");
-                    return 0;
-                }
-                if (xi == 0 && oi == 0) {
-                    printf("DRAW\n");
-                    return 0;
-                }
-                printf("\ncomputer turn\n");
-                min1();
-                compute_state();
-                printstate();
-                if (value == INF_MIN) {
-                    printf("YOU LOSE\n");
-                    return 0;
-                }
-                if (xi == 0 && oi == 0) {
-                    printf("DRAW\n");
-                    return 0;
-                }
+        print_state();
+        while (xi != 0 && oi != 0) {
+            cout << endl << "è½®æ‚¨è½å­å„¿ï¼š" << endl;
+            input();
+            compute_state();
+            print_state();
+            if (value == INF_MAX) {
+                cout << "å“‡å¿ƒæ€çˆ†ç‚¸ï¼" << endl;
+                return 0;
             }
-        }
-        else if (turn == COMPUTER) {
-            while (xi != 0 && oi != 0) {
-                printf("\ncomputer turn\n");
-                max2();
-                compute_state();
-                printstate();
-                if (value == INF_MAX) {
-                    printf("YOU LOSE\n");
-                    return 0;
-                }
-                if (xi == 0 && oi == 0) {
-                    printf("DRAW\n");
-                    return 0;
-                }
-                printf("\nyour turn\n");
-                waitfor();
-                compute_state();
-                printstate();
-                if (value == INF_MIN) {
-                    printf("EXECELLENT!\nYOU WIN\n");
-                    return 0;
-                }
-                if (xi == 0 && oi == 0) {
-                    printf("DRAW\n");
-                    return 0;
-                }
+            if (xi == 0 && oi == 0) {
+                cout << "å¹³å±€å˜¿ã€‚" << endl;
+                return 0;
+            }
+            cout << endl << "æˆ‘çš„å˜ï¼" << endl;
+            min1();
+            compute_state();
+            print_state();
+            if (value == INF_MIN) {
+                cout << "è¾“äº†å§å˜»å˜»~" << endl;
+                return 0;
+            }
+            if (xi == 0 && oi == 0) {
+                cout << "å¹³å±€å˜¿ã€‚" << endl;
+                return 0;
             }
         }
         return 0;
@@ -262,8 +232,7 @@ public:
 
 };
 
-int main()
-{
+int main() {
     Tic_tac_toe game;
     game.init();
     return 0;
