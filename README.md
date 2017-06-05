@@ -1,10 +1,10 @@
 # Introduction-to-Algorithms
 
-The assignments of "Introduction to Algorithms" by Professor Ming Su.
+*The assignments of "Introduction to Algorithms" by Professor Ming Su.*
 
-Please be careful when you are refering to them.
+*Please be careful when you are refering to them.*
 
-You will definitely regret if you copy them directly.
+*You will definitely regret if you copy them directly.*
 
 南開大学計算機与控制工程学院蘇明教授開設的“算法導論”上機作業。
 
