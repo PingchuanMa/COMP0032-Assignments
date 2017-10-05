@@ -1,4 +1,4 @@
-# Introduction-to-Algorithms
+# Introduction to Algorithms
 
 *The assignments of COMP0032 "Introduction to Algorithms" by Professor Ming Su.*
 
