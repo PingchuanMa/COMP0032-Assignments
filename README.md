@@ -4,7 +4,7 @@
 
 *Please be careful when you are refering to them.*
 
-*You will definitely regret if you copy them directly.*
+*You will definitely regret if you copy them uncritically.*
 
 南開大学計算機与控制工程学院蘇明教授開設的“算法導論”上機作業。
 
