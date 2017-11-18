@@ -2,7 +2,7 @@
 
 *The assignments of COMP0032 "Introduction to Algorithms" by Associate Professor Ming Su.*
 
-南開大学計算機与控制工程学院蘇明教授開設的“算法導論”上機作業。
+南開大学計算機与控制工程学院蘇明副研究員開設的“算法導論”上機作業。
 
 *Please be careful when refering to them.*
 
